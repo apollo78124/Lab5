@@ -8,7 +8,7 @@ class operation {
 public:
     virtual char get_code() = 0;
     virtual int perform(int a, int b) = 0;
-    virtual ~operation();
+    virtual ~operation(){};
 
 };
 #endif //LAB5_OPERATION_HPP
