@@ -2,7 +2,7 @@
 
 #ifndef LAB5_SUBTRACTION_OPERATION_HPP
 #define LAB5_SUBTRACTION_OPERATION_HPP
-class subtraction_operation : abstract_operation{
+class subtraction_operation : public abstract_operation{
 
 public:
     static const char SUBTRACTION_CODE = '-';

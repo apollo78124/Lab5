@@ -2,7 +2,7 @@
 
 #ifndef LAB5_ADDITION_OPERATION_HPP
 #define LAB5_ADDITION_OPERATION_HPP
-class addition_operation : abstract_operation{
+class addition_operation : public abstract_operation{
 
 public:
     static const char ADDITION_CODE = '+';

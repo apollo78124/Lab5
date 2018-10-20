@@ -2,12 +2,11 @@
 
 #ifndef LAB5_ABSTRACT_OPERATION_HPP
 #define LAB5_ABSTRACT_OPERATION_HPP
-class abstract_operation : operation{
+class abstract_operation : public operation{
 private:
     char operation_type;
-
 public:
-    abstract_operation(char t) : operation(){
+    abstract_operation(char t) : operation() {
         operation_type = t;
     }
 
