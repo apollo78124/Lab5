@@ -1,16 +1,13 @@
-//
-// Created by dldms on 10/19/2018.
-//
+#include "abstract_operation.hpp"
 
 #ifndef LAB5_DIVISION_OPERATION_HPP
 #define LAB5_DIVISION_OPERATION_HPP
-class division_operation : operation{
+class division_operation : abstract_operation{
 
 public:
-    static const char operation_CODE = '/';
-    division_operation() {
-        operation_type = operation_CODE;
-    }
+    static const char DIVISION_CODE = '/';
+
+    division_operation() : abstract_operation(DIVISION_CODE) {};
 
     int perform(int a, int b) override { return a/b;}
 

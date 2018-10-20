@@ -1,17 +1,14 @@
-//
-// Created by dldms on 10/19/2018.
-//
+#include "abstract_operation.hpp"
 
 #ifndef LAB5_MULTIPLICATION_OPERATION_HPP
 #define LAB5_MULTIPLICATION_OPERATION_HPP
 
-class multiplication_operation : operation{
+class multiplication_operation : abstract_operation{
 
 public:
-    static const char operation_CODE = '*';
-    multiplication_operation() {
-        operation_type = operation_CODE;
-    }
+    static const char MULTIPLICATION_CODE = '*';
+    multiplication_operation() : abstract_operation(MULTIPLICATION_CODE) {};
+
 
     int perform(int a, int b) override {return a*b;}
 

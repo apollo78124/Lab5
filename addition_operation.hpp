@@ -1,16 +1,12 @@
-//
-// Created by dldms on 10/19/2018.
-//
+#include "abstract_operation.hpp"
 
 #ifndef LAB5_ADDITION_OPERATION_HPP
 #define LAB5_ADDITION_OPERATION_HPP
-class addition_operation : operation{
+class addition_operation : abstract_operation{
 
 public:
-    static const char operation_CODE = '+';
-    addition_operation() {
-        operation_type = operation_CODE;
-    }
+    static const char ADDITION_CODE = '+';
+    addition_operation() : abstract_operation(ADDITION_CODE) {};
 
     int perform(int a, int b) override {return a+b;}
 
