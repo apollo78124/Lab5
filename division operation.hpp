@@ -9,6 +9,12 @@ public:
 
     division_operation() : abstract_operation(DIVISION_CODE) {};
 
+    /**
+     * Perform a/b
+     * @param a
+     * @param b
+     * @return
+     */
     int perform(int a, int b) override { return a/b;};
 
     virtual ~division_operation() {};

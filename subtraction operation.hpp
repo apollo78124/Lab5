@@ -8,6 +8,12 @@ public:
     static const char SUBTRACTION_CODE = '-';
     subtraction_operation() : abstract_operation(SUBTRACTION_CODE) {};
 
+    /**
+     * Perform a - b on the parameters.
+     * @param a
+     * @param b
+     * @return a-b
+     */
     int perform(int a, int b) override {return a-b;}
 
     virtual ~subtraction_operation() {};

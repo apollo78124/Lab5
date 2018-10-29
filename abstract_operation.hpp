@@ -10,10 +10,17 @@ public:
         operation_type = t;
     }
 
+    /**
+     * Call the code for operations.
+     * @return
+     */
     char get_code() {
         return operation_type;
     }
 
+    /**
+     * Virtual destructor.
+     */
     virtual ~abstract_operation() {};
 };
 #endif //LAB5_ABSTRACT_OPERATION_HPP

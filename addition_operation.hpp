@@ -8,6 +8,12 @@ public:
     static const char ADDITION_CODE = '+';
     addition_operation() : abstract_operation(ADDITION_CODE) {};
 
+    /**
+     * Perform a + b
+     * @param a
+     * @param b
+     * @return a+b
+     */
     int perform(int a, int b) override {return a+b;}
 
     virtual ~addition_operation() {};

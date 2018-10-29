@@ -14,9 +14,22 @@ class rpn_calculator {
 
 private:
     int result;
+    /**
+     * Stack to store operands.
+     */
     stack<int> mystack;
+
+    /**
+     * Point to the operation type.
+     * @param op
+     * @return
+     */
     operation *operation_type(char op);
 
+    /**
+     * Take the operation type to perform.
+     * @param o1
+     */
     void perform(operation* o1);
 
 public:
